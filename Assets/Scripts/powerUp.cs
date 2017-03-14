@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class powerUp : MonoBehaviour
 {
-    public GameObject obj;
     public Cat cat;
+    public GameObject obj;
+    
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -13,22 +14,23 @@ public class powerUp : MonoBehaviour
         {
             if (obj.name == "catNip")
             {
-                Debug.Log("speedUP");
-                cat.speed = 5;
+                cat.speed = 9;
             }
 
             if (obj.name == "milk")
             {
-                cat.life += 1;
-                Debug.Log("lifeUP");
+                cat.life += 3;
+                if(cat.life > 9)
+                {
+                    cat.life = 9;
+                }
             }
 
-            if (obj.name == "food")
+            if(obj.name == "waterPogo")
             {
-                Debug.Log("healthUP");
-                cat.health += 2;
+                cat.pogo = 1;
             }
-
+  
             Destroy(obj);
         }
 

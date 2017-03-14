@@ -4,25 +4,27 @@ using UnityEngine;
 
 public class Cat : MonoBehaviour
 {
-    public float health;
     public float life;
     public float speed;
-    //public Item[] inv = new Item[5];
+    public float pogo;
+    
 
    void Start()
     {
-        health = 10.0f;
+        //pogo: 0 is default, 1 is water
+        pogo = 0;
         life = 9.0f;
-        speed = 2.0f;
+        speed = 3.0f;
     }
 
 
 
     void Update ()
     {
-		if(health == 0)
+        transform.eulerAngles = new Vector3(0, 0, 0);
+		if(life == 0)
         {
-            life -= 1;
+            //die
         }
 	}
 }
