@@ -11,7 +11,7 @@ public class Control : MonoBehaviour
 
     void Start()
     {
-        animator = animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
 	void Update ()
