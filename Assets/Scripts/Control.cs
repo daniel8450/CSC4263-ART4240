@@ -31,7 +31,7 @@ public class Control : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
-            animator.SetInteger("State", 0);
+            animator.SetInteger("State", 3);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
