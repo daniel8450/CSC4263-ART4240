@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class noWalk : MonoBehaviour
 {
-    public Cat cat;
+    public Cat cat; 
     public Collider2D col;
+
+    void start()
+    {
+        //cat = GameObject.FindGameObjectWithTag("Cat");
+
+
+    }
 
     void OnCollisionEnter2D(Collision2D coll)
     {

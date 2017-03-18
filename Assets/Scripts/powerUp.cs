@@ -14,7 +14,7 @@ public class powerUp : MonoBehaviour
         {
             if (obj.name == "catNip")
             {
-                cat.speed = 9;
+                cat.speed = 18;
             }
 
             if (obj.name == "milk")

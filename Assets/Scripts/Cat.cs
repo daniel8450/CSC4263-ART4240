@@ -14,7 +14,7 @@ public class Cat : MonoBehaviour
         //pogo: 0 is default, 1 is water
         pogo = 0;
         life = 9.0f;
-        speed = 3.0f;
+        speed = 7.0f;
     }
 
 
