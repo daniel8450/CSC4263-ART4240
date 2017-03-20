@@ -24,12 +24,32 @@ public class Enemy : MonoBehaviour {
         }
     }
 
+    void Update()
+    {
+        if(health == 0)
+        {
+            Destroy(this.obj);
+        }
+
+    }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Cat"))
         {
             cat.life -= damage;
         }
+
+        if (col.CompareTag("claw"))
+        {
+            health -= 2;
+        }
+        else
+        {
+            health -= 0;
+        }
+
+
 
     }
 

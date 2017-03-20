@@ -12,6 +12,7 @@ TagManager:
   - sand
   - water
   - grass
+  - claw
   layers:
   - Default
   - TransparentFX
