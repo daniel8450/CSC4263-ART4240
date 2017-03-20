@@ -52,9 +52,9 @@ TagManager:
   - name: Enemy
     uniqueID: 1060088045
     locked: 0
-  - name: Cat
-    uniqueID: 367787029
-    locked: 0
   - name: Objects
     uniqueID: 74957961
+    locked: 0
+  - name: Cat
+    uniqueID: 367787029
     locked: 0
