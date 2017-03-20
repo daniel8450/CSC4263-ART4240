@@ -12,7 +12,7 @@ public class powerUp : MonoBehaviour
     {
         if (col.CompareTag("Cat"))
         {
-            if (obj.name == "catNip")
+            if (obj.name == "catnip")
             {
                 cat.speed = 18;
             }
@@ -26,7 +26,12 @@ public class powerUp : MonoBehaviour
                 }
             }
 
-            if(obj.name == "waterPogo")
+            if (obj.name == "food")
+            {
+                cat.life += 3;
+            }
+
+            if (obj.name == "waterPogo")
             {
                 cat.pogo = 1;
             }

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61027574967780956}
   - component: {fileID: 114282419773169764}
   m_Layer: 0
-  m_Name: catNip
+  m_Name: catnip
   m_TagString: Power
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
