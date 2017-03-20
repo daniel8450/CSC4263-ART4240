@@ -9,6 +9,9 @@ TagManager:
   - Objects
   - Background
   - Power
+  - sand
+  - water
+  - grass
   layers:
   - Default
   - TransparentFX

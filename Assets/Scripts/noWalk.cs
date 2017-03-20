@@ -16,10 +16,18 @@ public class noWalk : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (cat.pogo == 1)
+        if (cat.pogo == 1 && moveCol.tag == "sand")
         {
             moveCol.isTrigger = true;
- 
+        }
+        else if (cat.pogo == 2 && moveCol.tag == "water")
+        {
+            moveCol.isTrigger = true;
+        }
+        else
+        {
+            moveCol.isTrigger = false;
+
         }
         Debug.Log("Can't bounce here");
         
