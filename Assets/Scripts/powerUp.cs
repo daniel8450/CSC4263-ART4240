@@ -31,11 +31,16 @@ public class powerUp : MonoBehaviour
                 cat.life += 3;
             }
 
-            if (obj.name == "waterPogo")
+            if (obj.name == "sandPogo")
             {
                 cat.pogo = 1;
             }
-  
+
+            if (obj.name == "waterPogo")
+            {
+                cat.pogo = 2;
+            }
+
             Destroy(obj);
         }
 

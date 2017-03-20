@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class noWalk : MonoBehaviour
 {
-    public Cat cat; 
-    public Collider2D col;
+    public Cat cat;
+    public BoxCollider2D moveCol;
 
     void start()
     {
@@ -18,8 +18,8 @@ public class noWalk : MonoBehaviour
     {
         if (cat.pogo == 1)
         {
-            col.isTrigger = true;
-            Debug.Log(col.isTrigger);
+            moveCol.isTrigger = true;
+ 
         }
         Debug.Log("Can't bounce here");
         

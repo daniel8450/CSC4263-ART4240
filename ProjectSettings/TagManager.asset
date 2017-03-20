@@ -49,10 +49,13 @@ TagManager:
   - name: Background
     uniqueID: 474421369
     locked: 0
+  - name: Obstacles
+    uniqueID: 290447253
+    locked: 0
   - name: Enemy
     uniqueID: 1060088045
     locked: 0
-  - name: Objects
+  - name: Items
     uniqueID: 74957961
     locked: 0
   - name: Cat
