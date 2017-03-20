@@ -7,22 +7,27 @@ public class Obstacles : MonoBehaviour
     public Cat cat;
     public GameObject obj;
     Animator animator;
+    
+
+    void Update()
+    {
+        Physics2D.IgnoreCollision(cat.GetComponent<PolygonCollider2D>(), GetComponent<BoxCollider2D>());
+    }
 
 
     void OnTriggerEnter2D (Collider2D col)
     {
         if (col.CompareTag("Cat"))
         {
-            if(obj.name == "Spikes")
+            if(obj.name == "spikes")
             {
                 cat.life -= 1.0f;
             }
-            if(obj.name == "Sandpit")
+            if(obj.name == "sandpit")
             {
-                
                 cat.speed = cat.speed / 2.5f;
             }
-            if(obj.name == "SlideUp")
+            if(obj.name == "slideup")
             {
                 transform.position += Vector3.up * cat.speed * Time.deltaTime;
             }
@@ -30,9 +35,9 @@ public class Obstacles : MonoBehaviour
 	}
     void OnTriggerExit2D (Collider2D other)
     {
-        if(obj.name == "Sandpit")
+        if(obj.name == "sandpit")
         {
-            cat.speed = cat.speed * 2.5f;
+            cat.speed = 7;
         }
     }
 }
