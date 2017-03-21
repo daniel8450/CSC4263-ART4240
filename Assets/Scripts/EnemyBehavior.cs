@@ -19,7 +19,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         playerPos = new Vector2(target.localPosition.x, target.localPosition.y);//player position 
         enemyPos = new Vector2(this.transform.localPosition.x, this.transform.localPosition.y);//enemy position
-        if (Vector3.Distance(transform.transform.position, target.transform.position) < 10)//move towards if player gets too close
+        if (Vector2.Distance(transform.transform.position, target.transform.position) < 10)//move towards if player gets too close
         {
             transform.position = Vector2.MoveTowards(enemyPos, playerPos, moveSpeed*Time.deltaTime);
             //Vector2 velocity = new Vector2((transform.position.x - target.position.x) * moveSpeed, (transform.position.y - target.position.y) * 0);
