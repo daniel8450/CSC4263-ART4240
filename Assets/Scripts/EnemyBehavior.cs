@@ -23,9 +23,12 @@ public class EnemyBehavior : MonoBehaviour
             transform.position = Vector2.MoveTowards(enemyPos, playerPos, moveSpeed*Time.deltaTime);
        
         }
-    
+        else if (Vector2.Distance(transform.transform.position, target.transform.position) > 20)
+        {
+            transform.position = Vector2.MoveTowards(enemyPos, playerPos, 0 * Time.deltaTime);
+        }
 
-        if (target.position.x > transform.position.x)//flips enemy to the right if player is to the right  
+            if (target.position.x > transform.position.x)//flips enemy to the right if player is to the right  
         {
             transform.localScale = new Vector3(-0.3f, 0.3f, 1);
         }
