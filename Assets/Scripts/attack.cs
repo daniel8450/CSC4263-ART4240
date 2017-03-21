@@ -10,7 +10,7 @@ public class attack : MonoBehaviour {
     Rigidbody2D claw;
     Vector2 catObj;
     Vector2 clawObj;
-    double obj;
+    double obj = 0;
 
 
     void Start()
@@ -25,19 +25,23 @@ public class attack : MonoBehaviour {
        
         catObj = catObject.transform.position;
         clawObj = clawObject.transform.position;
+        clawObject.transform.eulerAngles = new Vector3(0, 0, -90.22201f);
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             clawObject.transform.position = new Vector2(catObj.x - .676f, catObj.y + .474f);
             obj = 0;
 
 
         }
-        else if(Input.GetKeyDown(KeyCode.RightArrow))
+        else if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.RightArrow))
         {
             clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             obj = 1;
         }
+
+
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

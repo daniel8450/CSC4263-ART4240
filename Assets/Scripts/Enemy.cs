@@ -4,25 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    public float health;
-    public float damage;
+    public float health; 
+    public float damage; 
     public Cat cat;
     public GameObject obj;
-
-    void Start()
-    {
-        if (obj.name == "dog")
-        {
-            health = 4;
-            damage = 1;
-        }
-
-        if (obj.name == "coon")
-        {
-            health = 6;
-            damage = 3;
-        }
-    }
 
     void Update()
     {

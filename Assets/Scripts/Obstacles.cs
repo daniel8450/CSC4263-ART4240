@@ -23,7 +23,7 @@ public class Obstacles : MonoBehaviour
             {
                 cat.life -= 1.0f;
             }
-            if(obj.name == "sandpit")
+            if(obj.name == "pit")
             {
                 cat.speed = cat.speed / 2.5f;
             }
@@ -35,7 +35,7 @@ public class Obstacles : MonoBehaviour
 	}
     void OnTriggerExit2D (Collider2D other)
     {
-        if(obj.name == "sandpit")
+        if(obj.name == "pit")
         {
             cat.speed = 7;
         }
