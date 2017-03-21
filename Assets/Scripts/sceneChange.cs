@@ -5,22 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class sceneChange : MonoBehaviour
 {
-    private bool check = true;
+    public GameObject obj;
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Cat"))
         {
-            if (check)
+            if (obj.name == "sceneTriggerOne")
             {
                 SceneManager.LoadScene("LevelOne");
-                check = false;
+                
             }
             else
             {
                 SceneManager.LoadScene("LevelZero");
             }
             
+
         }
 
     }
