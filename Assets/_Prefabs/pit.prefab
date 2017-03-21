@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61942037554817550}
   - component: {fileID: 114735661986913034}
   m_Layer: 0
-  m_Name: Sandpit
+  m_Name: pit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
