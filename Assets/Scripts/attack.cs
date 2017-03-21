@@ -8,8 +8,8 @@ public class attack : MonoBehaviour {
     public GameObject catObject;
     public GameObject clawObject;
     Rigidbody2D claw;
-    Vector3 catObj;
-    Vector3 clawObj;
+    Vector2 catObj;
+    Vector2 clawObj;
     double obj;
 
 
@@ -28,14 +28,14 @@ public class attack : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            clawObject.transform.position = new Vector3(catObj.x - .676f, catObj.y + .474f, catObj.z);
+            clawObject.transform.position = new Vector2(catObj.x - .676f, catObj.y + .474f);
             obj = 0;
 
 
         }
         else if(Input.GetKeyDown(KeyCode.RightArrow))
         {
-            clawObject.transform.position = new Vector3(catObj.x + .676f, catObj.y + .474f, catObj.z);
+            clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             obj = 1;
         }
 
@@ -53,11 +53,11 @@ public class attack : MonoBehaviour {
             claw.AddForce(force);
             if (obj==0)
             {
-                clawObject.transform.position = new Vector3(catObj.x - .676f, catObj.y + .474f, catObj.z);
+                clawObject.transform.position = new Vector2(catObj.x - .676f, catObj.y + .474f);
             }
             else if(obj==1)
             {
-                clawObject.transform.position = new Vector3(catObj.x + .676f, catObj.y + .474f, catObj.z);
+                clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             }
 
         }
@@ -65,11 +65,11 @@ public class attack : MonoBehaviour {
         {
             if (obj == 0)
             {
-                clawObject.transform.position = new Vector3(catObj.x - .676f, catObj.y + .474f, catObj.z);
+                clawObject.transform.position = new Vector2(catObj.x - .676f, catObj.y + .474f);
             }
             else if (obj == 1)
             {
-                clawObject.transform.position = new Vector3(catObj.x + .676f, catObj.y + .474f, catObj.z);
+                clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             }
         }
 
