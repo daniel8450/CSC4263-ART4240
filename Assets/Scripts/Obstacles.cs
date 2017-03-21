@@ -6,7 +6,6 @@ public class Obstacles : MonoBehaviour
 {
     public Cat cat;
     public GameObject obj;
-    Animator animator;
     
 
     void Update()
@@ -29,7 +28,19 @@ public class Obstacles : MonoBehaviour
             }
             if(obj.name == "slideup")
             {
-                transform.position += Vector3.up * cat.speed * Time.deltaTime;
+                transform.position += Vector3.up * 30 * Time.deltaTime;
+            }
+            if (obj.name == "slideleft")
+            {
+                transform.position += Vector3.left * 30 * Time.deltaTime;
+            }
+            if (obj.name == "slideright")
+            {
+                transform.position += Vector3.right * 30 * Time.deltaTime;
+            }
+            if (obj.name == "slidedown")
+            {
+                transform.position += Vector3.down * 30 * Time.deltaTime;
             }
         }
 	}
