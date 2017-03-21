@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4525343823304604}
   - component: {fileID: 212328445358510418}
-  - component: {fileID: 58966595820306314}
   - component: {fileID: 50285128437976492}
   - component: {fileID: 114387662733525036}
   - component: {fileID: 114831252105874718}
+  - component: {fileID: 61172628364118182}
   m_Layer: 0
   m_Name: dog
   m_TagString: Enemy
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1973212642392212}
   m_LocalRotation: {x: 0.008726558, y: 0, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 40.65, y: -18.79, z: -0.39}
+  m_LocalPosition: {x: 34.93, y: -18.8, z: -0.39}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,8 +64,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58966595820306314
-CircleCollider2D:
+--- !u!61 &61172628364118182
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -75,9 +75,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.25637308, y: -0.17074005}
   serializedVersion: 2
-  m_Radius: 2.592392
+  m_Size: {x: 5.943031, y: 3.4929187}
 --- !u!114 &114387662733525036
 MonoBehaviour:
   m_ObjectHideFlags: 1

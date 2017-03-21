@@ -10,7 +10,7 @@ public class Obstacles : MonoBehaviour
 
     void Update()
     {
-        Physics2D.IgnoreCollision(cat.GetComponent<PolygonCollider2D>(), GetComponent<BoxCollider2D>());
+        Physics2D.IgnoreCollision(cat.GetComponent<CapsuleCollider2D>(), GetComponent<BoxCollider2D>());
     }
 
 

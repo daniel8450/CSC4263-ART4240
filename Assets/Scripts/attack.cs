@@ -46,14 +46,14 @@ public class attack : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            force.Set(0, -400);
+            force.Set(0, -500);
             claw.AddForce(force);
 
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            force.Set(0, 400);
+            force.Set(0, 500);
             claw.AddForce(force);
             if (obj==0)
             {

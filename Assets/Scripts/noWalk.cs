@@ -9,7 +9,7 @@ public class noWalk : MonoBehaviour
 
     void start()
     {
-        //cat = GameObject.FindGameObjectWithTag("Cat");
+        
 
 
     }
@@ -20,7 +20,7 @@ public class noWalk : MonoBehaviour
         {
             moveCol.isTrigger = true;
         }
-        else if (cat.pogo == 2 && moveCol.tag == "water")
+        else if (cat.pogo == 2 && (moveCol.tag == "water" || moveCol.tag == "sand"))
         {
             moveCol.isTrigger = true;
         }

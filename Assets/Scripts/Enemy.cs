@@ -33,9 +33,6 @@ public class Enemy : MonoBehaviour {
         {
             health -= 0;
         }
-
-
-
     }
 
 }
