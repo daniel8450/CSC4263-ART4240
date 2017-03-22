@@ -13,6 +13,12 @@ TagManager:
   - water
   - grass
   - claw
+  - pit
+  - spikes
+  - slideup
+  - slideleft
+  - slideright
+  - slidedown
   layers:
   - Default
   - TransparentFX
