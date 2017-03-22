@@ -6,7 +6,8 @@ public class Obstacles : MonoBehaviour
 {
     public Cat cat;
     public GameObject obj;
-    
+    //private float tempSpeed;
+
 
     void Update()
     {
@@ -18,15 +19,15 @@ public class Obstacles : MonoBehaviour
     {
         if (col.CompareTag("Cat"))
         {
-            if(obj.name == "spikes")
+            if (obj.name == "spikes")
             {
                 cat.life -= 1.0f;
             }
-            if(obj.name == "pit")
+            if (obj.name == "pit")
             {
                 cat.speed = cat.speed / 2.5f;
             }
-            if(obj.name == "slideup")
+            if (obj.name == "slideup")
             {
                 transform.position += Vector3.up * 30 * Time.deltaTime;
             }
@@ -42,6 +43,31 @@ public class Obstacles : MonoBehaviour
             {
                 transform.position += Vector3.down * 30 * Time.deltaTime;
             }
+
+            //switch (obj.tag)
+            //{
+            //    case "spikes":
+            //        cat.life -= 1.0f;
+            //        break;
+            //    case "pit":
+            //        //tempSpeed = cat.speed;
+            //        cat.speed = cat.speed / 2.5f;
+            //        break;
+            //    case "slideup":
+            //        transform.position += Vector3.up * 30 * Time.deltaTime;
+            //        break;
+            //    case "slideleft":
+            //        transform.position += Vector3.left * 30 * Time.deltaTime;
+            //        break;
+            //    case "slideright":
+            //        transform.position += Vector3.right * 30 * Time.deltaTime;
+            //        break;
+            //    case "slidedown":
+            //        transform.position += Vector3.down * 30 * Time.deltaTime;
+            //        break;
+            //    default:
+            //        break;
+            //}
         }
 	}
     void OnTriggerExit2D (Collider2D other)
@@ -49,6 +75,8 @@ public class Obstacles : MonoBehaviour
         if(obj.name == "pit")
         {
             cat.speed = 7;
+            //cat.speed = tempSpeed;
+            //cat.speed = cat.speed * 2.5f;
         }
     }
 }
