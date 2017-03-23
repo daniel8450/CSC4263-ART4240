@@ -7,6 +7,7 @@ public class EnemyBehavior : MonoBehaviour
     public Transform target;
     Vector2 playerPos, enemyPos;
     public float moveSpeed;
+
     
 
     void Start()
@@ -37,5 +38,12 @@ public class EnemyBehavior : MonoBehaviour
             transform.localScale = new Vector3(0.3f, 0.3f, 1);
         }
     }
-
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("sand") || (other.CompareTag("water")))
+        {
+            other.GetComponent<noWalk>().moveCol.isTrigger= false;
+        }
+    }
 }
