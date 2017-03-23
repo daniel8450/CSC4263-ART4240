@@ -132,8 +132,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1384348366642428, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
       propertyPath: m_Name
-      value: milk (4)
+      value: milk
       objectReference: {fileID: 0}
+    - target: {fileID: 114012475350720014, guid: de1bfc0aab34a5e4c9e22fac6038ea7d,
+        type: 2}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 1246927870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
   m_IsPrefabParent: 0
@@ -225,8 +230,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1384348366642428, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
       propertyPath: m_Name
-      value: milk (5)
+      value: milk
       objectReference: {fileID: 0}
+    - target: {fileID: 114012475350720014, guid: de1bfc0aab34a5e4c9e22fac6038ea7d,
+        type: 2}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 1246927870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
   m_IsPrefabParent: 0
@@ -369,8 +379,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1384348366642428, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
       propertyPath: m_Name
-      value: milk (1)
+      value: milk
       objectReference: {fileID: 0}
+    - target: {fileID: 114012475350720014, guid: de1bfc0aab34a5e4c9e22fac6038ea7d,
+        type: 2}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 1246927870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
   m_IsPrefabParent: 0
@@ -415,8 +430,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1384348366642428, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
       propertyPath: m_Name
-      value: milk (2)
+      value: milk
       objectReference: {fileID: 0}
+    - target: {fileID: 114012475350720014, guid: de1bfc0aab34a5e4c9e22fac6038ea7d,
+        type: 2}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 1246927870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
   m_IsPrefabParent: 0
@@ -514,6 +534,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114012475350720014, guid: de1bfc0aab34a5e4c9e22fac6038ea7d,
+        type: 2}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 1246927870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
   m_IsPrefabParent: 0
@@ -611,8 +636,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1384348366642428, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
       propertyPath: m_Name
-      value: milk (3)
+      value: milk
       objectReference: {fileID: 0}
+    - target: {fileID: 114012475350720014, guid: de1bfc0aab34a5e4c9e22fac6038ea7d,
+        type: 2}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 1246927870}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
   m_IsPrefabParent: 0
