@@ -7,7 +7,7 @@ public class EnemyBehavior : MonoBehaviour
     public Transform target;
     Vector2 playerPos, enemyPos;
     public float moveSpeed;
-
+    
 
     void Start()
     {
@@ -37,4 +37,5 @@ public class EnemyBehavior : MonoBehaviour
             transform.localScale = new Vector3(0.3f, 0.3f, 1);
         }
     }
-    }
+
+}
