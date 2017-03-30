@@ -28,14 +28,14 @@ public class attack : MonoBehaviour {
         clawObj = clawObject.transform.position;
         clawObject.transform.eulerAngles = new Vector3(0, 0, -90.22201f);
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))// || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             clawObject.transform.position = new Vector2(catObj.x - .676f, catObj.y + .474f);
             obj = 0;
 
 
         }
-        else if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+        else if(Input.GetKeyDown(KeyCode.RightArrow))// || Input.GetKeyUp(KeyCode.RightArrow))
         {
             clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             obj = 1;
@@ -82,7 +82,7 @@ public class attack : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") && Input.GetKeyUp(KeyCode.Space)) //checks to see if spacebar has been pressed and the enemy is within the collider
+        if (other.CompareTag("Enemy") && Input.GetKey(KeyCode.Space)) //checks to see if spacebar has been pressed and the enemy is within the collider
         {
             other.GetComponent<Enemy>().TakeDamageBadGuy(2); //calls function from Enemy script to apply damage
         }

@@ -27,11 +27,11 @@ public class Enemy : MonoBehaviour {
 
         //if (col.CompareTag("claw"))
         //{
-            //health -= 2;
+        //    health -= 2;
         //}
         //else
         //{
-            //health -= 0;
+        //    health -= 0;
         //}
     }
 

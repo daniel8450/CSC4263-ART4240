@@ -24,7 +24,7 @@ public class Cat : MonoBehaviour
         transform.eulerAngles = new Vector3(0, 0, 0);
 		if(life == 0)
         {
-            Debug.Log("Game Over");
+            //Debug.Log("Game Over");
             //die
         }
 	}
