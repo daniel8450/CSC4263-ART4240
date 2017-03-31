@@ -5,21 +5,47 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    
-    Slider slide;
+    const int enemyNum = 10;
+    public Slider slide;
+    public Enemy[] enemies;
+    public Slider[] enemySlide;
 
     void Start()
     {
-        slide.maxValue = slide.GetComponentInParent<Enemy>().health;
         slide.minValue = 0;
         slide.wholeNumbers = true;
-        slide.value = slide.maxValue;
-        slide.transform.position = new Vector3(0, slide.GetComponentsInParent<SpriteRenderer>().GetUpperBound(0) + 5, 0);
 
+        enemies = new Enemy[enemyNum];
+        enemySlide = new Slider[enemyNum];
+
+        for (int i = 0; i < enemyNum; i++)
+        {
+            if (enemies[i] != null)
+            {
+                Slider arrSlide = slide;
+                arrSlide.maxValue = enemies[i].health;
+                arrSlide.value = arrSlide.maxValue;
+                arrSlide.transform.position = new Vector3(enemies[i].transform.position.x, enemies[i].transform.position.y + 5);
+                enemySlide[i] = arrSlide;
+            }
+        }
     }
 
-    public void takenDamage(int amt)
+    private void Update()
     {
-        slide.value = slide.value - amt;
+        for(int i = 0; i < enemyNum; i++)
+        {
+            if(enemies[i] != null)
+            {
+                enemySlide[i].value = enemies[i].health;
+            }
+            else
+            {
+                if(enemySlide[i] != null)
+                {
+                    Destroy(enemySlide[i]);
+                }
+            }
+        }
     }
 }

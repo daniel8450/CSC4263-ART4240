@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour {
     public float damage; 
     public Cat cat;
     public GameObject obj;
-    public EnemyHealth enemyHealth;
 
     void Update()
     {
@@ -39,7 +38,6 @@ public class Enemy : MonoBehaviour {
     public void TakeDamageBadGuy(int damageEnemy)
     {
         health -= damageEnemy;
-        enemyHealth.takenDamage(damageEnemy);
     }
 
 }
