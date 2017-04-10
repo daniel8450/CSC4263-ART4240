@@ -25,19 +25,21 @@ public class Enemy : MonoBehaviour {
             cat.life -= damage;
         }
 
-        //if (col.CompareTag("claw"))
-        //{
-            //health -= 2;
-        //}
-        //else
-        //{
-            //health -= 0;
-        //}
+        if (col.CompareTag("claw"))
+        {
+            health -= 2;
+        }
+        else
+        {
+            health -= 0;
+        }
     }
 
+    //NEEDS FIX
+    /** 
     public void TakeDamageBadGuy(int damageEnemy)
     {
         health -= damageEnemy;
     }
-
+    */
 }

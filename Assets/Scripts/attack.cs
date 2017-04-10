@@ -80,6 +80,8 @@ public class attack : MonoBehaviour {
 
     }
 
+    //NEEDS FIX
+    /**
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy") && Input.GetKeyUp(KeyCode.Space)) //checks to see if spacebar has been pressed and the enemy is within the collider
@@ -87,5 +89,6 @@ public class attack : MonoBehaviour {
             other.GetComponent<Enemy>().TakeDamageBadGuy(2); //calls function from Enemy script to apply damage
         }
     }
+    */
 }
 
