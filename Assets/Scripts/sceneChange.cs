@@ -16,11 +16,14 @@ public class sceneChange : MonoBehaviour
                 SceneManager.LoadScene("LevelOne");
                 
             }
-            else
+            else if (obj.name == "sceneTriggerTwo")
             {
-                SceneManager.LoadScene("LevelZero");
+                SceneManager.LoadScene("LevelTwo");
             }
-            
+            //else if (obj.name == "sceneTriggerThree")
+           //{
+              //SceneManager.LoadScene("LevelThree");
+           //}
 
         }
 
