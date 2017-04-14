@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour {
             cat.life -= damage;
         }
 
+
         if (col.CompareTag("claw"))
         {
             health -= 2;
