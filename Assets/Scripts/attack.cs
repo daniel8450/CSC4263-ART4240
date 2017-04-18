@@ -7,9 +7,12 @@ public class attack : MonoBehaviour {
     public Vector2 force;
     public GameObject catObject;
     public GameObject clawObject;
+    public GameObject scratchLEFT;
+    public GameObject scratchRIGHT;
     Rigidbody2D claw;
     Vector2 catObj;
     Vector2 clawObj;
+    Vector2 tempPos;
     double obj = 0;
     //public int damageEnemy;
 
@@ -18,7 +21,9 @@ public class attack : MonoBehaviour {
     {
         
         claw = GetComponent<Rigidbody2D>();
-
+        tempPos = new Vector2(catObj.x - 100000, catObj.y - 100000); //temp fix to hiding the object
+        scratchLEFT.transform.position = tempPos;
+        scratchRIGHT.transform.position = tempPos;
     }
 
     void Update()
@@ -26,36 +31,70 @@ public class attack : MonoBehaviour {
        
         catObj = catObject.transform.position;
         clawObj = clawObject.transform.position;
-        clawObject.transform.eulerAngles = new Vector3(0, 0, -90.22201f);
+
+        if(obj == 0 || obj == 1)
+            clawObject.transform.eulerAngles = new Vector3(0, 0, -90.22201f);
+
+        if (obj == 2 || obj == 3)
+            clawObject.transform.eulerAngles = new Vector3(0, 0, 0f);
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))// || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             clawObject.transform.position = new Vector2(catObj.x - .676f, catObj.y + .474f);
             obj = 0;
-
-
         }
         else if(Input.GetKeyDown(KeyCode.RightArrow))// || Input.GetKeyUp(KeyCode.RightArrow))
         {
             clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             obj = 1;
         }
-
-
-
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            clawObject.transform.eulerAngles = new Vector3(0, 0, 0f);
+            clawObject.transform.position = new Vector2(catObj.x, catObj.y + .474f);
+            obj = 2;
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            clawObject.transform.eulerAngles = new Vector3(0, 0, 0f);
+            clawObject.transform.position = new Vector2(catObj.x, catObj.y - 1.474f);
+            obj = 3;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (obj == 0 || obj == 1 || obj == 3)
+            {
+                if (obj == 0)
+                {
+                    scratchLEFT.transform.position = new Vector2(catObj.x - .8f, catObj.y - .3f);
+                }
+                else if (obj == 1)
+                {
+                    scratchRIGHT.transform.position = new Vector2(catObj.x + .8f, catObj.y - .3f);
+                }
 
-            force.Set(0, -500);
-            claw.AddForce(force);
+                force.Set(0, -500);
+                claw.AddForce(force);
+            } else
+            {
+                force.Set(0, 500);
+                claw.AddForce(force);
+            }
 
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            force.Set(0, 500);
-            claw.AddForce(force);
+            if (obj == 0 || obj == 1 || obj == 3)
+            {
+                force.Set(0, 500);
+                claw.AddForce(force);
+            }else
+            {
+                force.Set(0, -500);
+                claw.AddForce(force);
+            }
             if (obj==0)
             {
                 clawObject.transform.position = new Vector2(catObj.x - .676f, catObj.y + .474f);
@@ -64,6 +103,16 @@ public class attack : MonoBehaviour {
             {
                 clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             }
+            else if (obj == 2)
+            {
+                clawObject.transform.position = new Vector2(catObj.x, catObj.y + .474f);
+            }
+            else if (obj == 3)
+            {
+                clawObject.transform.position = new Vector2(catObj.x, catObj.y - 1.474f);
+            }
+            scratchLEFT.transform.position = tempPos;
+            scratchRIGHT.transform.position = tempPos;
 
         }
         else if (clawObj.y < catObj.y - .8f)
@@ -77,8 +126,18 @@ public class attack : MonoBehaviour {
                 clawObject.transform.position = new Vector2(catObj.x + .676f, catObj.y + .474f);
             }
         }
+        else if (clawObj.y > catObj.y + 1f)
+        {
+            clawObject.transform.position = new Vector2(catObj.x, catObj.y + .474f);
+        }
+        else if (clawObj.y < catObj.y - 2f)
+        {
+            clawObject.transform.position = new Vector2(catObj.x, catObj.y - 1.474f);
+        }
+
 
     }
+
 
     //NEEDS FIX
     /**
