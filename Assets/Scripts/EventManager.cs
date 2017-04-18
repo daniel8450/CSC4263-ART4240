@@ -8,11 +8,11 @@ public class EventManager : MonoBehaviour
 	public Cat cat;
 	public GameObject obj;
 	public GameObject pogo;
-	SpriteRenderer renderer;
+	//SpriteRenderer renderer;
 
 	void Start()
 	{
-		renderer = gameObject.GetComponent<SpriteRenderer>();
+		//renderer = gameObject.GetComponent<SpriteRenderer>();
 		//obj = GetComponent<CircleCollider2D> ();
 	}
 
@@ -25,13 +25,14 @@ public class EventManager : MonoBehaviour
 			//GameObject re = Instantiate(3, -3, 0) as GameObject; 
 			Spawn();
 			//obj.GetComponent<CircleCollider2D> ().isTrigger;
-			renderer.color = Color.blue;
+			//renderer.color = Color.blue;
+            Destroy(obj);
 		}
 	}
 
 	void Spawn()
 	{
 
-		Instantiate(pogo, new Vector3(3, -3), Quaternion.identity);
+		Instantiate<GameObject>(pogo, new Vector3(3, -3), Quaternion.identity);
 	}
 }
