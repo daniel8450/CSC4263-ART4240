@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Node
 {
-    public List<Node> adjacent = new List<Node>;
+    public List<Node> adjacent = new List<Node>();
     public Node previous = null;
     public string label = "";
 

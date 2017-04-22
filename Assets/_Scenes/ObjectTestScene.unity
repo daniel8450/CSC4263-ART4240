@@ -246,8 +246,7 @@ Prefab:
         type: 2}
       propertyPath: pogo
       value: 
-      objectReference: {fileID: 1610359696628482, guid: 38caa177c8a3bea459094e92317ec51f,
-        type: 2}
+      objectReference: {fileID: 1119274417}
     - target: {fileID: 212858571035127064, guid: 8ac44edd447e9e54a80ec61732c09dcb,
         type: 2}
       propertyPath: m_SortingLayerID
@@ -454,6 +453,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4874e7e8f164e49489b1ab0e81361663, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1119274417 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1610359696628482, guid: 38caa177c8a3bea459094e92317ec51f,
+    type: 2}
+  m_PrefabInternal: {fileID: 326587443}
 --- !u!1 &1252913924 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1578745490086322, guid: 8ac44edd447e9e54a80ec61732c09dcb,
