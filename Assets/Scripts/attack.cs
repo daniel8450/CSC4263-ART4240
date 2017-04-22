@@ -7,8 +7,6 @@ public class attack : MonoBehaviour {
     public Vector2 force;
     public GameObject catObject;
     public GameObject clawObject;
-    public GameObject scratchLEFT;
-    public GameObject scratchRIGHT;
     Rigidbody2D claw;
     Vector2 catObj;
     Vector2 clawObj;
@@ -21,9 +19,6 @@ public class attack : MonoBehaviour {
     {
         
         claw = GetComponent<Rigidbody2D>();
-        tempPos = new Vector2(catObj.x - 100000, catObj.y - 100000); //temp fix to hiding the object
-        scratchLEFT.transform.position = tempPos;
-        scratchRIGHT.transform.position = tempPos;
     }
 
     void Update()
@@ -65,14 +60,6 @@ public class attack : MonoBehaviour {
         {
             if (obj == 0 || obj == 1 || obj == 3)
             {
-                if (obj == 0)
-                {
-                    scratchLEFT.transform.position = new Vector2(catObj.x - .8f, catObj.y - .3f);
-                }
-                else if (obj == 1)
-                {
-                    scratchRIGHT.transform.position = new Vector2(catObj.x + .8f, catObj.y - .3f);
-                }
 
                 force.Set(0, -500);
                 claw.AddForce(force);
@@ -111,8 +98,6 @@ public class attack : MonoBehaviour {
             {
                 clawObject.transform.position = new Vector2(catObj.x, catObj.y - 1.474f);
             }
-            scratchLEFT.transform.position = tempPos;
-            scratchRIGHT.transform.position = tempPos;
 
         }
         else if (clawObj.y < catObj.y - .8f)
