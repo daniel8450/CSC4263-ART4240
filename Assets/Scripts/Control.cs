@@ -5,8 +5,10 @@ using UnityEngine;
 public class Control : MonoBehaviour
 {
     public Cat cat;
+    public Animator scratch;
     float speed;
     Animator animator;
+    
 
 
     void Start()
@@ -37,6 +39,13 @@ public class Control : MonoBehaviour
         {
             transform.position += Vector3.down * speed * Time.deltaTime;
             animator.SetInteger("State", 0);
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+           scratch.SetInteger("Check", 1);
+        }else
+        {
+            scratch.SetInteger("Check", 0);
         }
     }
 }
