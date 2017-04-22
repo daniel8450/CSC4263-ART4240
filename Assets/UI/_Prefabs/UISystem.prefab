@@ -199,8 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   livesText: {fileID: 114527811596391214}
   PogoText: {fileID: 114940125751193586}
-  playerCat: {fileID: 114107623793385866, guid: fab089a9a9699474ab49a300455cde5a,
-    type: 2}
+  playerCat: {fileID: 0}
 --- !u!114 &114739388070193818
 MonoBehaviour:
   m_ObjectHideFlags: 1
