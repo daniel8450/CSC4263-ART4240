@@ -11,20 +11,19 @@ public class sceneChange : MonoBehaviour
     {
         if (col.CompareTag("Cat"))
         {
-            if (obj.name == "sceneTriggerOne")
+            switch (obj.name)
             {
-                SceneManager.LoadScene("LevelOne");
-                
-            }
-            else if (obj.name == "sceneTriggerTwo")
-            {
-                SceneManager.LoadScene("LevelTwo");
-            }
-            //else if (obj.name == "sceneTriggerThree")
-           //{
-              //SceneManager.LoadScene("LevelThree");
-           //}
+                case "trigger1":
+                    SceneManager.LoadScene("area1");
+                    break;
 
+                case "trigger2":
+                    SceneManager.LoadScene("area2");
+                    break;
+
+                default:
+                    break;
+            }
         }
 
     }
