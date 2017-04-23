@@ -19,6 +19,7 @@ TagManager:
   - slideleft
   - slideright
   - slidedown
+  - man
   layers:
   - Default
   - TransparentFX
