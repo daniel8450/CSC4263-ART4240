@@ -5,6 +5,7 @@ public class EnemyBehavior : MonoBehaviour
 {
 
     public Transform target;
+    public GameObject obj;
     Vector2 playerPos, enemyPos;
     public float moveSpeed;
     Animator animator;
@@ -35,14 +36,25 @@ public class EnemyBehavior : MonoBehaviour
 
             if (target.position.x > transform.position.x)//flips enemy to the right if player is to the right  
         {
-           
-            transform.localScale = new Vector3(-0.3f, 0.3f, 1);
+           if(obj.tag == "man" || obj.tag == "man")
+            {
+                transform.localScale = new Vector3(-.85f, 0.85f, 1);
+            }else
+            {
+                transform.localScale = new Vector3(-0.3f, 0.3f, 1);
+            }
 
         }
         if (target.position.x < transform.position.x)//flips enemy to the left if player is to the left 
         {
-            
-            transform.localScale = new Vector3(0.3f, 0.3f, 1);
+            if (obj.tag == "man" || obj.tag == "man")
+            {
+                transform.localScale = new Vector3(.85f, 0.85f, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(0.3f, 0.3f, 1);
+            }
         }
     }
     

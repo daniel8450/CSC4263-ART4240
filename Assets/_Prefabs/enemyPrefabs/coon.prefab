@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  obj: {fileID: 1883630606429802}
   moveSpeed: 3
 --- !u!212 &212723624122912850
 SpriteRenderer:
