@@ -7,6 +7,8 @@ public class CatStatus : MonoBehaviour
 {
 	public Text livesText;
 	public Text PogoText;
+	public SpriteRenderer pogoImg;
+	public Sprite[] imgs = new Sprite[4];
 	public Cat playerCat;
 	// Use this for initialization
 	void Start ()
@@ -33,6 +35,6 @@ public class CatStatus : MonoBehaviour
 
 	void GetCatPogo ()
 	{
-		PogoText.text = "PogoStick: " + playerCat.pogo;
+		pogoImg.sprite = imgs[(int)playerCat.pogo];
 	}
 }
