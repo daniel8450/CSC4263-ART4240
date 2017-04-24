@@ -74,9 +74,9 @@ public class Obstacles : MonoBehaviour
     {
         if(obj.name == "pit")
         {
-            cat.speed = 7;
+            //cat.speed = 9;
             //cat.speed = tempSpeed;
-            //cat.speed = cat.speed * 2.5f;
+           cat.speed = cat.speed * 2.5f;
         }
     }
 }
