@@ -1600,6 +1600,10 @@ Prefab:
       propertyPath: playerCat
       value: 
       objectReference: {fileID: 219310336}
+    - target: {fileID: 1730263817814354, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
   m_IsPrefabParent: 0
@@ -1704,11 +1708,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4465383643931584, guid: fab089a9a9699474ab49a300455cde5a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: 17.28
       objectReference: {fileID: 0}
     - target: {fileID: 4465383643931584, guid: fab089a9a9699474ab49a300455cde5a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.7
+      value: 7.35
       objectReference: {fileID: 0}
     - target: {fileID: 4465383643931584, guid: fab089a9a9699474ab49a300455cde5a, type: 2}
       propertyPath: m_LocalPosition.z
