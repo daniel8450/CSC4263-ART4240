@@ -36,7 +36,7 @@ public class EnemyBehavior : MonoBehaviour
 
             if (target.position.x > transform.position.x)//flips enemy to the right if player is to the right  
         {
-           if(obj.tag == "man" || obj.tag == "man")
+           if(obj.tag == "man")
             {
                 transform.localScale = new Vector3(-.85f, 0.85f, 1);
             }else
@@ -47,7 +47,7 @@ public class EnemyBehavior : MonoBehaviour
         }
         if (target.position.x < transform.position.x)//flips enemy to the left if player is to the left 
         {
-            if (obj.tag == "man" || obj.tag == "man")
+            if (obj.tag == "man")
             {
                 transform.localScale = new Vector3(.85f, 0.85f, 1);
             }

@@ -35,12 +35,23 @@ public class Enemy : MonoBehaviour {
             health -= 0;
         }
     }
-
-    //NEEDS FIX
-    /** 
-    public void TakeDamageBadGuy(int damageEnemy)
+    /**
+    void OnTriggerStay2D(Collider2D coll)
     {
-        health -= damageEnemy;
+        if (coll.CompareTag("Cat"))
+        {
+            cat.life -= damage;
+        }
+
+
+        if (coll.CompareTag("claw"))
+        {
+            health -= 2;
+        }
+        else
+        {
+            health -= 0;
+        }
     }
     */
 }
