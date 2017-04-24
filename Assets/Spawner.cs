@@ -7,9 +7,13 @@ public class Spawner : MonoBehaviour {
     public Cat cat;
     public GameObject obj;
     public GameObject dog;
+    Vector2 pos;
+    public float localX;
+    public float localY;
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        
         if (col.CompareTag("Cat"))
         {
             Spawn();
@@ -19,6 +23,7 @@ public class Spawner : MonoBehaviour {
 
     void Spawn()
     {
-        Instantiate<GameObject>(dog, new Vector2(9f, -13f), Quaternion.identity);
+        pos = obj.transform.position;
+        Instantiate<GameObject>(dog, new Vector2(pos.x + localX, pos.y + localY), Quaternion.identity);
     }
 }
