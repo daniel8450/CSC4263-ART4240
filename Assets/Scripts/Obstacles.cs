@@ -72,11 +72,11 @@ public class Obstacles : MonoBehaviour
 	}
     void OnTriggerExit2D (Collider2D other)
     {
-        if(obj.name == "pit")
+        if(obj.tag == "pit")
         {
-            //cat.speed = 9;
+            cat.speed = 9;
             //cat.speed = tempSpeed;
-           cat.speed = cat.speed * 2.5f;
+           //cat.speed = cat.speed * 2.5f;
         }
     }
 }
