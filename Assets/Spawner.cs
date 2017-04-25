@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour {
     Vector2 pos;
     public float localX;
     public float localY;
+    public float amount;
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -24,6 +25,9 @@ public class Spawner : MonoBehaviour {
     void Spawn()
     {
         pos = obj.transform.position;
-        Instantiate<GameObject>(dog, new Vector2(pos.x + localX, pos.y + localY), Quaternion.identity);
+        for (int i = 0; i < amount; i++)
+        {
+            Instantiate<GameObject>(dog, new Vector2(pos.x + localX + i, pos.y + localY + i), Quaternion.identity);
+        }
     }
 }
