@@ -50,6 +50,11 @@ public class powerUp : MonoBehaviour
                 cat.pogo = 3;
             }
 
+            if (obj.name == "masterPogo")
+            {
+                cat.pogo = 4;
+            }
+
             Destroy(obj);
         }
 

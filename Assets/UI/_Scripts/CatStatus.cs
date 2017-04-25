@@ -7,7 +7,7 @@ public class CatStatus : MonoBehaviour
 {
 	public Text livesText;
 	public Image pogoImg;
-	public Sprite[] imgs = new Sprite[4];
+	public Sprite[] imgs = new Sprite[5];
 	public Cat playerCat;
 	// Use this for initialization
 	void Start ()
