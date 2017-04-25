@@ -638,6 +638,10 @@ Prefab:
       propertyPath: playerCat
       value: 
       objectReference: {fileID: 1246927870}
+    - target: {fileID: 1503884118282112, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
   m_IsPrefabParent: 0
@@ -840,6 +844,10 @@ Prefab:
     - target: {fileID: 224440449075835076, guid: 7a13cd4b7fa670c41b7630f87e46b308,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333034445697418, guid: 7a13cd4b7fa670c41b7630f87e46b308, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

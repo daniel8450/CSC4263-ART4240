@@ -20,6 +20,10 @@ public class CatStatus : MonoBehaviour
 	{
 		GetCatLives();
 		GetCatPogo();
+		if(Input.GetKey(KeyCode.P) && Input.GetKey(KeyCode.Q))
+		{
+			UnityEngine.SceneManagement.SceneManager.LoadScene("UITestScene");
+		}
 	}
 
 	void GetCatSpeed ()
