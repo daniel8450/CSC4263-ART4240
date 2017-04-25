@@ -25,6 +25,10 @@ public class sceneChange : MonoBehaviour
                     SceneManager.LoadScene("area3");
                     break;
 
+                case "trigger51":
+                    SceneManager.LoadScene("area51");
+                    break;
+
                 default:
                     break;
             }
