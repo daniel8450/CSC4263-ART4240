@@ -8,11 +8,6 @@ public class sceneChange : MonoBehaviour
     public GameObject obj;
     public Cat cat;
 
-    void Awake()
-    {
-        DontDestroyOnLoad(cat.transform);
-    }
-
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Cat"))

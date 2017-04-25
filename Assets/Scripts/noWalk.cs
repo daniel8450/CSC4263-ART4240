@@ -25,12 +25,20 @@ public class noWalk : MonoBehaviour
         {
             moveCol.isTrigger = true;
         }
+        else if (cat.pogo == 3 && (moveCol.tag == "water" || moveCol.tag == "sand"))
+        {
+            moveCol.isTrigger = true;
+        }
+        else if (cat.pogo == 4 && (moveCol.tag == "water" || moveCol.tag == "sand"))
+        {
+            moveCol.isTrigger = true;
+        }
         else
         {
             moveCol.isTrigger = false;
 
         }
-        Debug.Log("Can't bounce here");
+        
         
     }
 }
