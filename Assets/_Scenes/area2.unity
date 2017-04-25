@@ -128,7 +128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4108620254366294, guid: 924427cca91f2c242a18f88198afc693, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 924427cca91f2c242a18f88198afc693, type: 2}
@@ -627,7 +627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 519224875}
-  cat: {fileID: 0}
 --- !u!61 &519224877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1032,17 +1031,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4417285643571532, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114657394279421286, guid: 35b349c78d29a6c438b34361381fd80f,
+    - target: {fileID: 114925607924138334, guid: 35b349c78d29a6c438b34361381fd80f,
         type: 2}
       propertyPath: playerCat
       value: 
       objectReference: {fileID: 74136907}
-    - target: {fileID: 1730263817814354, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
   m_IsPrefabParent: 0
@@ -1381,7 +1376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 1406667566}
-  cat: {fileID: 74136907}
 --- !u!4 &1406667569
 Transform:
   m_ObjectHideFlags: 0
