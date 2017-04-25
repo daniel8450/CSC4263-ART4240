@@ -1176,11 +1176,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114925607924138334, guid: 35b349c78d29a6c438b34361381fd80f,
-        type: 2}
-      propertyPath: imgs.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4417285643571532, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1218,36 +1213,6 @@ Prefab:
       propertyPath: playerCat
       value: 
       objectReference: {fileID: 942998705}
-    - target: {fileID: 114925607924138334, guid: 35b349c78d29a6c438b34361381fd80f,
-        type: 2}
-      propertyPath: imgs.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: 1683f41fda42aea4c94c11c82e6a015e,
-        type: 3}
-    - target: {fileID: 114925607924138334, guid: 35b349c78d29a6c438b34361381fd80f,
-        type: 2}
-      propertyPath: imgs.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: 3cecbaece1af86d44bdd5ec949264f50,
-        type: 3}
-    - target: {fileID: 114925607924138334, guid: 35b349c78d29a6c438b34361381fd80f,
-        type: 2}
-      propertyPath: imgs.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: 7316ce589da11e844b9df5eb30c15855,
-        type: 3}
-    - target: {fileID: 114925607924138334, guid: 35b349c78d29a6c438b34361381fd80f,
-        type: 2}
-      propertyPath: imgs.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: ea511faf3c1aea741a65bb0d413adf7e,
-        type: 3}
-    - target: {fileID: 114925607924138334, guid: 35b349c78d29a6c438b34361381fd80f,
-        type: 2}
-      propertyPath: imgs.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: 7e8123003e747f3429ba9d030351969d,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
   m_IsPrefabParent: 0

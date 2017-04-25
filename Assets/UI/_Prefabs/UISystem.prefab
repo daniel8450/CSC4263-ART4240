@@ -267,6 +267,7 @@ MonoBehaviour:
   livesText: {fileID: 114410700967910080}
   pogoImg: {fileID: 114774620574277164}
   imgs:
+  - {fileID: 21300000, guid: 7e8123003e747f3429ba9d030351969d, type: 3}
   - {fileID: 21300000, guid: ea511faf3c1aea741a65bb0d413adf7e, type: 3}
   - {fileID: 21300000, guid: 7316ce589da11e844b9df5eb30c15855, type: 3}
   - {fileID: 21300000, guid: 3cecbaece1af86d44bdd5ec949264f50, type: 3}
