@@ -205,23 +205,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dogSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 59a16e9305d411342ad16daab027cee1, type: 3}
+  - {fileID: 8300000, guid: 041807efa7531ec4fac36f10c865fa9b, type: 3}
+  - {fileID: 8300000, guid: 33f5531ca3af4d1478c07035a7a026e7, type: 3}
+  - {fileID: 8300000, guid: ec4a3f97e6a9ef9479e07c5df3bfa737, type: 3}
+  - {fileID: 8300000, guid: c6bac7a798519614e9542b8c09458368, type: 3}
+  - {fileID: 8300000, guid: b087111543d561544a2a1fa6bb30983c, type: 3}
+  - {fileID: 8300000, guid: 61f69ae877b700840bddf70655031cd5, type: 3}
+  - {fileID: 8300000, guid: cf97e54cd8e96a349a2f5b574e695481, type: 3}
+  - {fileID: 8300000, guid: 6f6626c8a1095454b8b8f008e30140c8, type: 3}
+  - {fileID: 8300000, guid: 9cfa0a48b9d94f348adbd8b7146a9d30, type: 3}
+  - {fileID: 8300000, guid: fb26ac02a98555a4eaf56578fb4e9a04, type: 3}
+  - {fileID: 8300000, guid: 3a48f4bcd22d4934fb1d7d4f8142478c, type: 3}
+  - {fileID: 8300000, guid: 456bf7fa3a0b6b04ab171041c67290e9, type: 3}
+  - {fileID: 8300000, guid: 154598c199e38334abeaa6c7d4ade8ff, type: 3}
+  - {fileID: 8300000, guid: ecdd321643627aa44b3900457bb3cc79, type: 3}
+  - {fileID: 8300000, guid: 2097da42650b75446bff4224205135ee, type: 3}
+  - {fileID: 8300000, guid: 24f4fa9ced3fe25469453ffd691de933, type: 3}
   audioSource: {fileID: 82672453082131032}
   time: 50
 --- !u!114 &114650916609157540
