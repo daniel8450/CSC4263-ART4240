@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 34600026}
   - component: {fileID: 34600025}
   - component: {fileID: 34600024}
+  - component: {fileID: 34600027}
   m_Layer: 0
   m_Name: fence forward (2)
   m_TagString: Untagged
@@ -170,6 +171,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &34600027
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 34600023}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.3008728}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.3982544}
 --- !u!1001 &47636077
 Prefab:
   m_ObjectHideFlags: 0
@@ -318,6 +333,7 @@ GameObject:
   - component: {fileID: 154829962}
   - component: {fileID: 154829961}
   - component: {fileID: 154829960}
+  - component: {fileID: 154829963}
   m_Layer: 0
   m_Name: fence forward
   m_TagString: Untagged
@@ -387,6 +403,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &154829963
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154829959}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.027349949}
+  serializedVersion: 2
+  m_Size: {x: 5.234143, y: 4.3041725}
 --- !u!1001 &155948593
 Prefab:
   m_ObjectHideFlags: 0
@@ -489,6 +519,7 @@ GameObject:
   - component: {fileID: 246806832}
   - component: {fileID: 246806831}
   - component: {fileID: 246806830}
+  - component: {fileID: 246806833}
   m_Layer: 0
   m_Name: fence forward (4)
   m_TagString: Untagged
@@ -558,6 +589,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &246806833
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246806829}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.4376316}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.124737}
 --- !u!1001 &396786608
 Prefab:
   m_ObjectHideFlags: 0
@@ -945,6 +990,7 @@ GameObject:
   - component: {fileID: 575738478}
   - component: {fileID: 575738477}
   - component: {fileID: 575738476}
+  - component: {fileID: 575738479}
   m_Layer: 0
   m_Name: fence forward (5)
   m_TagString: Untagged
@@ -1014,6 +1060,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &575738479
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 575738475}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.38292885}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.2341423}
 --- !u!1001 &644634631
 Prefab:
   m_ObjectHideFlags: 0
@@ -1066,6 +1126,7 @@ GameObject:
   - component: {fileID: 677866554}
   - component: {fileID: 677866553}
   - component: {fileID: 677866552}
+  - component: {fileID: 677866555}
   m_Layer: 0
   m_Name: fence forward (1)
   m_TagString: Untagged
@@ -1135,6 +1196,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &677866555
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677866551}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.08205557}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.070034}
 --- !u!1001 &697309530
 Prefab:
   m_ObjectHideFlags: 0
@@ -1191,6 +1266,7 @@ GameObject:
   - component: {fileID: 720005299}
   - component: {fileID: 720005298}
   - component: {fileID: 720005297}
+  - component: {fileID: 720005300}
   m_Layer: 0
   m_Name: fence forward (3)
   m_TagString: Untagged
@@ -1260,6 +1336,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &720005300
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720005296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.32822418}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.3435516}
 --- !u!1001 &767091665
 Prefab:
   m_ObjectHideFlags: 0
