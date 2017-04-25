@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class CatStatus : MonoBehaviour
 {
 	public Text livesText;
-	public Text PogoText;
-	public SpriteRenderer pogoImg;
+	public Image pogoImg;
 	public Sprite[] imgs = new Sprite[4];
 	public Cat playerCat;
 	// Use this for initialization
