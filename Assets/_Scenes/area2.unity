@@ -512,8 +512,8 @@ Transform:
   - {fileID: 1465419312}
   - {fileID: 1011887374}
   - {fileID: 1674156728}
-  - {fileID: 143578779}
   - {fileID: 1727135329}
+  - {fileID: 143578779}
   - {fileID: 755937451}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1575,6 +1575,11 @@ Prefab:
       propertyPath: m_Name
       value: dog (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 82672453082131032, guid: 3cd25676df21eb946b1ae59bb8e27473,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 041807efa7531ec4fac36f10c865fa9b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cd25676df21eb946b1ae59bb8e27473, type: 2}
   m_IsPrefabParent: 0
@@ -2294,6 +2299,11 @@ Prefab:
       propertyPath: cat
       value: 
       objectReference: {fileID: 74136907}
+    - target: {fileID: 82672453082131032, guid: 3cd25676df21eb946b1ae59bb8e27473,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 59a16e9305d411342ad16daab027cee1, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cd25676df21eb946b1ae59bb8e27473, type: 2}
   m_IsPrefabParent: 0
