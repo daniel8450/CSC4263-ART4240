@@ -8,6 +8,7 @@ public class attack : MonoBehaviour {
     public GameObject catObject;
     public GameObject clawObject;
     Rigidbody2D claw;
+    BoxCollider2D box;
     Vector2 catObj;
     Vector2 clawObj;
     Vector2 tempPos;
@@ -17,6 +18,7 @@ public class attack : MonoBehaviour {
     void Start()
     {
         claw = GetComponent<Rigidbody2D>();
+        box = GetComponent<BoxCollider2D>();          
     }
 
     void Update()
@@ -52,6 +54,7 @@ public class attack : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            box.enabled = true;
             if (obj == 0)
             {
                 force.Set(-500, 0);
@@ -70,6 +73,9 @@ public class attack : MonoBehaviour {
                 claw.AddForce(force);
             }
 
+        }else
+        {
+            box.enabled = false;
         }
 
         if (Input.GetKeyUp(KeyCode.Space))

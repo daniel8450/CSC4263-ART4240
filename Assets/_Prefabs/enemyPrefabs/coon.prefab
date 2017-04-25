@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 6
-  damage: 3
+  damage: 1
   cat: {fileID: 0}
   obj: {fileID: 1883630606429802}
 --- !u!114 &114802439566169302

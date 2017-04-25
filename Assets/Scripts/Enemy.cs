@@ -9,6 +9,13 @@ public class Enemy : MonoBehaviour {
     public Cat cat;
     public GameObject obj;
 
+    void Start()
+    {
+        Physics2D.IgnoreCollision(cat.GetComponent<BoxCollider2D>(), GetComponent<CircleCollider2D>());
+        Physics2D.IgnoreCollision(cat.GetComponent<CircleCollider2D>(), GetComponent<CircleCollider2D>());
+    }
+
+
     void Update()
     {
         if(health <= 0)
@@ -35,23 +42,4 @@ public class Enemy : MonoBehaviour {
             health -= 0;
         }
     }
-    /**
-    void OnTriggerStay2D(Collider2D coll)
-    {
-        if (coll.CompareTag("Cat"))
-        {
-            cat.life -= damage;
-        }
-
-
-        if (coll.CompareTag("claw"))
-        {
-            health -= 2;
-        }
-        else
-        {
-            health -= 0;
-        }
-    }
-    */
 }
