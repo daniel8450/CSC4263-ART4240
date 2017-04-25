@@ -13,7 +13,7 @@ public class Cat : MonoBehaviour
    void Start()
     {
         //pogo: 0 is default, 1 is water
-        pogo = 1f;
+        pogo = 0f;
         life = 9.0f;
         speed = 9.0f;
         check = 0f;
