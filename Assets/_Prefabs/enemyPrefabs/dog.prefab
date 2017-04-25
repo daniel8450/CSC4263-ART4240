@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 58301586521634500}
   - component: {fileID: 61642231877905368}
   - component: {fileID: 50001596337935276}
+  - component: {fileID: 114230586010389452}
+  - component: {fileID: 82672453082131032}
   m_Layer: 0
   m_Name: dog
   m_TagString: Enemy
@@ -40,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1241694504727518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.905119, y: -6.5003805, z: 0}
+  m_LocalPosition: {x: -15.81, y: 3.68, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,6 +96,86 @@ BoxCollider2D:
   m_Offset: {x: 0.14381407, y: 0.5078204}
   serializedVersion: 2
   m_Size: {x: 5.137134, y: 3.883082}
+--- !u!82 &82672453082131032
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241694504727518}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95011948149059942
 Animator:
   serializedVersion: 3
@@ -111,6 +193,37 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114230586010389452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241694504727518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ead8aa6805942849b6294dd3f2f5d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dogSounds:
+  - {fileID: 8300000, guid: 59a16e9305d411342ad16daab027cee1, type: 3}
+  - {fileID: 8300000, guid: 041807efa7531ec4fac36f10c865fa9b, type: 3}
+  - {fileID: 8300000, guid: 33f5531ca3af4d1478c07035a7a026e7, type: 3}
+  - {fileID: 8300000, guid: ec4a3f97e6a9ef9479e07c5df3bfa737, type: 3}
+  - {fileID: 8300000, guid: c6bac7a798519614e9542b8c09458368, type: 3}
+  - {fileID: 8300000, guid: b087111543d561544a2a1fa6bb30983c, type: 3}
+  - {fileID: 8300000, guid: 61f69ae877b700840bddf70655031cd5, type: 3}
+  - {fileID: 8300000, guid: cf97e54cd8e96a349a2f5b574e695481, type: 3}
+  - {fileID: 8300000, guid: 6f6626c8a1095454b8b8f008e30140c8, type: 3}
+  - {fileID: 8300000, guid: 9cfa0a48b9d94f348adbd8b7146a9d30, type: 3}
+  - {fileID: 8300000, guid: fb26ac02a98555a4eaf56578fb4e9a04, type: 3}
+  - {fileID: 8300000, guid: 3a48f4bcd22d4934fb1d7d4f8142478c, type: 3}
+  - {fileID: 8300000, guid: 456bf7fa3a0b6b04ab171041c67290e9, type: 3}
+  - {fileID: 8300000, guid: 154598c199e38334abeaa6c7d4ade8ff, type: 3}
+  - {fileID: 8300000, guid: ecdd321643627aa44b3900457bb3cc79, type: 3}
+  - {fileID: 8300000, guid: 2097da42650b75446bff4224205135ee, type: 3}
+  - {fileID: 8300000, guid: 24f4fa9ced3fe25469453ffd691de933, type: 3}
+  audioSource: {fileID: 82672453082131032}
+  time: 50
 --- !u!114 &114650916609157540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d8455ab79611e4e9e8faa852d15268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4
+  health: 6
   damage: 2
   cat: {fileID: 0}
   obj: {fileID: 1241694504727518}
