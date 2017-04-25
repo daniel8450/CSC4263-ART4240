@@ -8,6 +8,7 @@ public class Cat : MonoBehaviour
     public float speed;
     public float pogo;
     public float check;
+    public bool hasToy;
     
 
    void Start()
@@ -17,6 +18,7 @@ public class Cat : MonoBehaviour
         life = 9.0f;
         speed = 9.0f;
         check = 0f;
+        hasToy = false;
     }
 
 

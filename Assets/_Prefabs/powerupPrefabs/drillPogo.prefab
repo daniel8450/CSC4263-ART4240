@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4343667099391104}
   - component: {fileID: 212613592584843226}
   - component: {fileID: 114197577516992236}
+  - component: {fileID: 61460302231086528}
   m_Layer: 0
   m_Name: drillPogo
   m_TagString: Untagged
@@ -35,12 +36,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1227603747390460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.59226, y: 6.96758, z: 0}
+  m_LocalPosition: {x: -17.8, y: 15.5, z: 0}
   m_LocalScale: {x: 0.31099042, y: 0.31099042, z: 0.31099042}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61460302231086528
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227603747390460}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 6}
 --- !u!114 &114197577516992236
 MonoBehaviour:
   m_ObjectHideFlags: 1

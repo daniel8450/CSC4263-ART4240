@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BabsDialog : MonoBehaviour
+public class giveBabsToy : MonoBehaviour
 {
-    public Cat theCat;
+
+    public Cat cat;
+    public Transform player;
     Vector2 playerPos;
-    public Transform cat;
+    public GameObject babs;
+
     public GameObject dog;
     public GameObject dog1;
     public GameObject coon1;
     public GameObject coon;
     public GameObject man;
-    public GameObject drillPrefab;
-    bool isCreated;
-    Vector3 drillSpot = new Vector3(-5, 8, 0);
 
-    public string[] babsTalk = {"My precious cat toy! I've forgotten where I left it!\n(Press A)",
-         "I refuse to move from this spot until my toy is returned to me.\n(Press A)",
-         "You, crippled cat! Take my drill Pogo and find my toy for me.\n(Press A)"};
+    public string[] babsTalk = {"My precious cat toy!\n(Press A)",
+         "You found it!\n(Press A)",
+         "I guess I'll leave now.\n(Press A)"};
     int box = 0;
     Rect dialogueRect = new Rect(70, 100, 400, 50);
     bool showBox;
@@ -28,14 +28,22 @@ public class BabsDialog : MonoBehaviour
 
     }
 
-
     void Update()
     {
-        playerPos = new Vector2(cat.localPosition.x, cat.localPosition.y);
-
-        if ((Vector2.Distance(transform.transform.position, cat.transform.position) < 3) && (theCat.hasToy == false))
+        playerPos = new Vector2(player.localPosition.x, player.localPosition.y);
+        if ((Vector2.Distance(transform.transform.position, player.transform.position) < 3) && (cat.hasToy == true))
         {
+            //box++;
             showBox = true;
+        }
+
+        else
+        {
+            showBox = false;
+        }
+
+        if (showBox == true)
+        {
             //cat.gameObject.SetActive(false);
             dog.gameObject.SetActive(false);
             coon.gameObject.SetActive(false);
@@ -43,29 +51,25 @@ public class BabsDialog : MonoBehaviour
             coon1.gameObject.SetActive(false);
             man.gameObject.SetActive(false);
         }
+
         else
         {
+            showBox = false;
             //cat.gameObject.SetActive(true);
             dog.gameObject.SetActive(true);
             coon.gameObject.SetActive(true);
             man.gameObject.SetActive(true);
-            showBox = false;
+
         }
 
         if ((showBox == true) && (Input.GetKeyDown(KeyCode.A)))
         {
-
             box++;
         }
 
-        if (box == 2)
+        if (box == 3)
         {
-            if (!isCreated)
-            {
-                Instantiate(drillPrefab, drillSpot, Quaternion.identity);
-                isCreated = true;
-            }
-
+            Destroy(babs);
         }
     }
 
@@ -75,12 +79,10 @@ public class BabsDialog : MonoBehaviour
         {
             GUI.Box(dialogueRect, babsTalk[box]);
         }
-        else //if ((box >= babsTalk.Length))
+        else
         {
 
 
         }
     }
 }
-
-
