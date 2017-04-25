@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114392027928301630}
   - component: {fileID: 114584537096937078}
   m_Layer: 0
-  m_Name: slideright
+  m_Name: SlideRight
   m_TagString: slideright
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

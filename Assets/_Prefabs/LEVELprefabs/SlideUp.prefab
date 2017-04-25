@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114462479401484906}
   - component: {fileID: 114210608912518398}
   m_Layer: 0
-  m_Name: slideup
+  m_Name: SlideUp
   m_TagString: slideup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
