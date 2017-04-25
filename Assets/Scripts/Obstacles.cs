@@ -6,8 +6,6 @@ public class Obstacles : MonoBehaviour
 {
     public Cat cat;
     public GameObject obj;
-    //private float tempSpeed;
-
 
     void Update()
     {
@@ -26,7 +24,6 @@ public class Obstacles : MonoBehaviour
                     cat.life -= 1.0f;
                     break;
                 case "pit":
-                    //tempSpeed = cat.speed;
                     cat.speed = cat.speed / 2.5f;
                     break;
                 case "slideup":
@@ -44,6 +41,9 @@ public class Obstacles : MonoBehaviour
                 default:
                     break;
             }
+        }else if (col.CompareTag("Enemy") && obj.tag == "spikes")
+        {
+            col.GetComponent<Enemy>().health -= 1;
         }
 	}
     void OnTriggerExit2D (Collider2D other)
@@ -51,8 +51,6 @@ public class Obstacles : MonoBehaviour
         if(obj.tag == "pit")
         {
             cat.speed = 9;
-            //cat.speed = tempSpeed;
-           //cat.speed = cat.speed * 2.5f;
         }
     }
 }
