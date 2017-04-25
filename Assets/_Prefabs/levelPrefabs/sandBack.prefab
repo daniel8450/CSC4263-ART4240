@@ -20,10 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4561150252603924}
   - component: {fileID: 212106171117232958}
-  - component: {fileID: 61270936323289346}
-  - component: {fileID: 61508894420779232}
   - component: {fileID: 61609409874487146}
-  - component: {fileID: 61152710308198948}
   m_Layer: 0
   m_Name: sandBack
   m_TagString: Untagged
@@ -38,54 +35,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1699005044608510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3061347, y: -0.9911541, z: 0}
-  m_LocalScale: {x: 0.7692308, y: 0.7692308, z: 1}
+  m_LocalPosition: {x: 15.2, y: -8.8, z: 0}
+  m_LocalScale: {x: 0.771525, y: 0.7898787, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61152710308198948
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1699005044608510}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: -23.134178, y: -0.0000012397767}
-  serializedVersion: 2
-  m_Size: {x: 1.2761841, y: 30.000004}
---- !u!61 &61270936323289346
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1699005044608510}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 15.366997}
-  serializedVersion: 2
-  m_Size: {x: 45.000004, y: 0.7392025}
---- !u!61 &61508894420779232
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1699005044608510}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -15.400457}
-  serializedVersion: 2
-  m_Size: {x: 45.000004, y: 0.9400339}
 --- !u!61 &61609409874487146
 BoxCollider2D:
   m_ObjectHideFlags: 1

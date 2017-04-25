@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4777654683023108}
   - component: {fileID: 212282764048446436}
   - component: {fileID: 114844315609213504}
-  - component: {fileID: 60642698756954270}
+  - component: {fileID: 61121895690233298}
   m_Layer: 0
-  m_Name: sandPogo
-  m_TagString: Untagged
+  m_Name: waterPogo
+  m_TagString: waterPogo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,14 +36,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820807745266810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5624485, y: -6.6567273, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 34.96, y: -16.29, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60642698756954270
-PolygonCollider2D:
+--- !u!61 &61121895690233298
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -53,12 +53,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: -0.43301272, y: -0.24999994}
-      - {x: 0.43301272, y: -0.25000003}
-      - {x: 0, y: 0.5}
+  m_Offset: {x: 0.09197998, y: -0.068984985}
+  serializedVersion: 2
+  m_Size: {x: 1.8610001, y: 3.4706147}
 --- !u!114 &114844315609213504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,7 +100,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 74957961
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1eaab309b6395a34187a0c1ae967e9dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f5cbae7826ba4040838fecc06367a05, type: 3}
   m_Color: {r: 0.6183704, g: 0.74264705, b: 0.38224483, a: 1}
   m_FlipX: 0
   m_FlipY: 0

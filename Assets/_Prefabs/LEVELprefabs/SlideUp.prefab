@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 212076802588140798}
   - component: {fileID: 61516564443302404}
   - component: {fileID: 114462479401484906}
+  - component: {fileID: 114210608912518398}
   m_Layer: 0
-  m_Name: SlideUp
+  m_Name: slideup
   m_TagString: slideup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1473992101350248}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.52, y: -3.11, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 34.82, y: -3.7999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,6 +57,22 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &114210608912518398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473992101350248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653233d8c202aec40ba9d4798a460074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cat: {fileID: 0}
+  pogo: {fileID: 0}
+  bridge: {fileID: 0}
+  obj: {fileID: 1473992101350248}
+  target: {fileID: 0}
 --- !u!114 &114462479401484906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,8 +116,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 474421369
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: de639d0080b8b5041859440b0d5c2bd2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.007843138, g: 0.79215693, b: 0.93725497, a: 1}
   m_FlipX: 0
   m_FlipY: 0

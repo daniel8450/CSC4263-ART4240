@@ -5,7 +5,7 @@ using UnityEngine;
 public class noWalk : MonoBehaviour
 {
     public Cat cat;
-    public BoxCollider2D moveCol;
+    public Collider2D moveCol;
 
     void start()
     {

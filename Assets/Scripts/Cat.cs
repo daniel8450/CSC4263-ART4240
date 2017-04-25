@@ -7,14 +7,16 @@ public class Cat : MonoBehaviour
     public float life;
     public float speed;
     public float pogo;
+    public float check;
     
 
    void Start()
     {
         //pogo: 0 is default, 1 is water
-        pogo = 0;
+        pogo = 1;
         life = 9.0f;
         speed = 9.0f;
+        check = 0f;
     }
 
 

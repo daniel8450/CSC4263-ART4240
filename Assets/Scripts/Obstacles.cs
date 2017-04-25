@@ -12,6 +12,7 @@ public class Obstacles : MonoBehaviour
     void Update()
     {
         Physics2D.IgnoreCollision(cat.GetComponent<CapsuleCollider2D>(), GetComponent<BoxCollider2D>());
+        Physics2D.IgnoreCollision(cat.GetComponent<CircleCollider2D>(), GetComponent<BoxCollider2D>());
     }
 
 
@@ -19,31 +20,6 @@ public class Obstacles : MonoBehaviour
     {
         if (col.CompareTag("Cat"))
         {
-            //if (obj.name == "spikes")
-            //{
-            //    cat.life -= 1.0f;
-            //}
-            //if (obj.name == "pit")
-            //{
-            //    cat.speed = cat.speed / 2.5f;
-            //}
-            //if (obj.name == "slideup")
-            //{
-            //    transform.position += Vector3.up * 30 * Time.deltaTime;
-            //}
-            //if (obj.name == "slideleft")
-            //{
-            //    transform.position += Vector3.left * 30 * Time.deltaTime;
-            //}
-            //if (obj.name == "slideright")
-            //{
-            //    transform.position += Vector3.right * 30 * Time.deltaTime;
-            //}
-            //if (obj.name == "slidedown")
-            //{
-            //    transform.position += Vector3.down * 30 * Time.deltaTime;
-            //}
-
             switch (obj.tag)
             {
                 case "spikes":

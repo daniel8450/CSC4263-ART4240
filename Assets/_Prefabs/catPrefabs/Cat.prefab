@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114205128237800418}
   - component: {fileID: 61641179964307796}
   - component: {fileID: 70642784278927856}
+  - component: {fileID: 58811327964450236}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Cat
@@ -188,7 +189,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.10404377
+  m_Mass: 0.6738444
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -217,6 +218,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58811327964450236
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1454052572835836}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.01, y: -2.07}
+  serializedVersion: 2
+  m_Radius: 0.6616173
 --- !u!61 &61601213592849236
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -238,9 +253,9 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1454052572835836}
   m_Enabled: 1
-  m_Density: 1
+  m_Density: 0
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: -0.014281954, y: -2.6252902}
   serializedVersion: 2
@@ -321,6 +336,7 @@ MonoBehaviour:
   life: -5
   speed: 1.2912718e-12
   pogo: 0
+  check: 0
 --- !u!114 &114205128237800418
 MonoBehaviour:
   m_ObjectHideFlags: 1

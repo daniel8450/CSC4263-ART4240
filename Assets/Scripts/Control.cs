@@ -84,4 +84,5 @@ public class Control : MonoBehaviour
             scratch.SetInteger("Check", 0);
         }
     }
+
 }
