@@ -9,8 +9,9 @@ public class noWalk : MonoBehaviour
 
     void start()
     {
-        
 
+        Physics2D.IgnoreCollision(cat.GetComponent<CapsuleCollider2D>(), GetComponent<BoxCollider2D>());
+        Physics2D.IgnoreCollision(cat.GetComponent<CircleCollider2D>(), GetComponent<BoxCollider2D>());
 
     }
 
