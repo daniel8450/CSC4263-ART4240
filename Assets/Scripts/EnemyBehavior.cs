@@ -29,9 +29,10 @@ public class EnemyBehavior : MonoBehaviour
             transform.position = Vector2.MoveTowards(enemyPos, playerPos, moveSpeed*Time.deltaTime);
        
         }
-        else if (Vector2.Distance(transform.transform.position, target.transform.position) > 20)
+        else if (Vector2.Distance(transform.transform.position, target.transform.position) > 15)
         {
             transform.position = Vector2.MoveTowards(enemyPos, playerPos, 0 * Time.deltaTime);
+            animator.SetInteger("State", 1);
         }
 
             if (target.position.x > transform.position.x)//flips enemy to the right if player is to the right  
@@ -64,5 +65,6 @@ public class EnemyBehavior : MonoBehaviour
         {
             other.GetComponent<noWalk>().moveCol.isTrigger= false;
         }
+
     }
 }
