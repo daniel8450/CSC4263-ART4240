@@ -11,6 +11,8 @@ public class BabsDialog : MonoBehaviour
     public GameObject coon;
     public GameObject man;
     public GameObject drillPrefab;
+    bool isCreated;
+    Vector3 drillSpot = new Vector3(-5, 8, 0);
 
     public string[] babsTalk = {"My precious cat toy! I've forgotten where I left it!\n(Press A)",
          "I refuse to move from this spot until my toy is returned to me.\n(Press A)",
@@ -50,6 +52,16 @@ public class BabsDialog : MonoBehaviour
             
             box++;
         }
+
+        if(box == 2)
+        {
+            if (!isCreated)
+            {
+                Instantiate(drillPrefab, drillSpot, Quaternion.identity);
+                isCreated = true;
+            }
+          
+        }
     }
 
     void OnGUI()
@@ -58,9 +70,10 @@ public class BabsDialog : MonoBehaviour
         {
             GUI.Box(dialogueRect, babsTalk[box]);
         }
-        else if ((box >= babsTalk.Length))
+        else //if ((box >= babsTalk.Length))
         {
-            Instantiate(drillPrefab, transform.position, Quaternion.identity);
+          
+                
         }
     }
 }
