@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 69596308}
+  cat: {fileID: 942998705}
 --- !u!61 &69596310
 BoxCollider2D:
   m_ObjectHideFlags: 0

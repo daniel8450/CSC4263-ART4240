@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 34600026}
   - component: {fileID: 34600025}
   - component: {fileID: 34600024}
+  - component: {fileID: 34600027}
   m_Layer: 0
   m_Name: fence forward (2)
   m_TagString: Untagged
@@ -151,8 +152,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 290447253
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9737531364a19e642a40ff3a589cbc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -170,6 +171,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &34600027
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 34600023}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.3008728}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.3982544}
 --- !u!1001 &47636077
 Prefab:
   m_ObjectHideFlags: 0
@@ -318,6 +333,7 @@ GameObject:
   - component: {fileID: 154829962}
   - component: {fileID: 154829961}
   - component: {fileID: 154829960}
+  - component: {fileID: 154829963}
   m_Layer: 0
   m_Name: fence forward
   m_TagString: Untagged
@@ -368,8 +384,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 290447253
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9737531364a19e642a40ff3a589cbc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -387,6 +403,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &154829963
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154829959}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.027349949}
+  serializedVersion: 2
+  m_Size: {x: 5.234143, y: 4.3041725}
 --- !u!1001 &155948593
 Prefab:
   m_ObjectHideFlags: 0
@@ -489,6 +519,7 @@ GameObject:
   - component: {fileID: 246806832}
   - component: {fileID: 246806831}
   - component: {fileID: 246806830}
+  - component: {fileID: 246806833}
   m_Layer: 0
   m_Name: fence forward (4)
   m_TagString: Untagged
@@ -539,8 +570,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 290447253
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9737531364a19e642a40ff3a589cbc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -558,6 +589,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &246806833
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246806829}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.4376316}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.124737}
 --- !u!1001 &396786608
 Prefab:
   m_ObjectHideFlags: 0
@@ -886,11 +931,6 @@ Prefab:
       propertyPath: playerCat
       value: 
       objectReference: {fileID: 428851986}
-    - target: {fileID: 114774620574277164, guid: 35b349c78d29a6c438b34361381fd80f,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
   m_IsPrefabParent: 0
@@ -950,6 +990,7 @@ GameObject:
   - component: {fileID: 575738478}
   - component: {fileID: 575738477}
   - component: {fileID: 575738476}
+  - component: {fileID: 575738479}
   m_Layer: 0
   m_Name: fence forward (5)
   m_TagString: Untagged
@@ -1000,8 +1041,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 290447253
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9737531364a19e642a40ff3a589cbc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1019,6 +1060,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &575738479
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 575738475}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.38292885}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.2341423}
 --- !u!1001 &644634631
 Prefab:
   m_ObjectHideFlags: 0
@@ -1071,6 +1126,7 @@ GameObject:
   - component: {fileID: 677866554}
   - component: {fileID: 677866553}
   - component: {fileID: 677866552}
+  - component: {fileID: 677866555}
   m_Layer: 0
   m_Name: fence forward (1)
   m_TagString: Untagged
@@ -1121,8 +1177,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 290447253
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9737531364a19e642a40ff3a589cbc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1140,6 +1196,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &677866555
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677866551}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.08205557}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.070034}
 --- !u!1001 &697309530
 Prefab:
   m_ObjectHideFlags: 0
@@ -1196,6 +1266,7 @@ GameObject:
   - component: {fileID: 720005299}
   - component: {fileID: 720005298}
   - component: {fileID: 720005297}
+  - component: {fileID: 720005300}
   m_Layer: 0
   m_Name: fence forward (3)
   m_TagString: Untagged
@@ -1246,8 +1317,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 290447253
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9737531364a19e642a40ff3a589cbc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1265,6 +1336,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &720005300
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720005296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.32822418}
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5.3435516}
 --- !u!1001 &767091665
 Prefab:
   m_ObjectHideFlags: 0
@@ -1537,6 +1622,16 @@ Prefab:
     - target: {fileID: 1441854219244220, guid: 1d596310f67f9f44e940ac8cd3440bd9, type: 2}
       propertyPath: m_Name
       value: dirt4x2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212117781717465224, guid: 1d596310f67f9f44e940ac8cd3440bd9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 290447253
+      objectReference: {fileID: 0}
+    - target: {fileID: 212117781717465224, guid: 1d596310f67f9f44e940ac8cd3440bd9,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d596310f67f9f44e940ac8cd3440bd9, type: 2}
@@ -2016,6 +2111,16 @@ Prefab:
     - target: {fileID: 4715220953469664, guid: 1d596310f67f9f44e940ac8cd3440bd9, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 212117781717465224, guid: 1d596310f67f9f44e940ac8cd3440bd9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 290447253
+      objectReference: {fileID: 0}
+    - target: {fileID: 212117781717465224, guid: 1d596310f67f9f44e940ac8cd3440bd9,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d596310f67f9f44e940ac8cd3440bd9, type: 2}
