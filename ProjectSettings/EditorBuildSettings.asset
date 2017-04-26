@@ -7,23 +7,35 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/_Scenes/LevelZero.unity
+  - enabled: 0
+    path: Assets/_Scenes/LevelOne.unity
+  - enabled: 0
+    path: Assets/_Scenes/LevelTwo.unity
+  - enabled: 0
+    path: Assets/_Scenes/ObjectTestScene.unity
+  - enabled: 0
+    path: Assets/_Scenes/area51.unity
+  - enabled: 1
+    path: Assets/_Scenes/UITestScene.unity
   - enabled: 1
     path: Assets/_Scenes/area0.unity
   - enabled: 1
     path: Assets/_Scenes/area1.unity
   - enabled: 1
     path: Assets/_Scenes/area2.unity
-  - enabled: 0
-    path: Assets/_Scenes/LevelOne.unity
   - enabled: 1
     path: Assets/_Scenes/area3.unity
-  - enabled: 0
-    path: Assets/_Scenes/LevelTwo.unity
-  - enabled: 1
-    path: Assets/_Scenes/ObjectTestScene.unity
   - enabled: 1
     path: Assets/_Scenes/area4.unity
   - enabled: 1
+    path: Assets/_Scenes/area5.unity
+  - enabled: 1
     path: Assets/_Scenes/area6.unity
   - enabled: 1
-    path: Assets/_Scenes/area51.unity
+    path: Assets/_Scenes/area7.unity
+  - enabled: 1
+    path: Assets/_Scenes/area8.unity
+  - enabled: 1
+    path: Assets/_Scenes/area9.unity
+  - enabled: 1
+    path: Assets/_Scenes/area10.unity
