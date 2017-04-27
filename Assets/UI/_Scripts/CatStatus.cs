@@ -9,10 +9,12 @@ public class CatStatus : MonoBehaviour
 	public Image pogoImg;
 	public Sprite[] imgs = new Sprite[5];
 	public Cat playerCat;
+	private static CatStatus _instance;
 	// Use this for initialization
+
 	void Start ()
 	{
-		
+		playerCat = FindObjectOfType<Cat>();
 	}
 	
 	// Update is called once per frame
@@ -23,6 +25,11 @@ public class CatStatus : MonoBehaviour
 		if(Input.GetKey(KeyCode.P) && Input.GetKey(KeyCode.Q))
 		{
 			UnityEngine.SceneManagement.SceneManager.LoadScene("UITestScene");
+		}
+
+		if(playerCat == null)
+		{
+			playerCat = FindObjectOfType<Cat>();
 		}
 	}
 

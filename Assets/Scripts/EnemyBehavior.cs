@@ -20,6 +20,16 @@ public class EnemyBehavior : MonoBehaviour
 
     void Update()
     {
+        if (target == null)
+        {
+            target = FindObjectOfType<Cat>().transform;
+        }
+        
+        if(obj == null)
+        {
+            obj = this.gameObject;
+        }
+
         playerPos = new Vector2(target.localPosition.x, target.localPosition.y);//player position 
         enemyPos = new Vector2(this.transform.localPosition.x, this.transform.localPosition.y);//enemy position
         transform.eulerAngles = new Vector3(0, 0, 0);//keeps the enemy upright

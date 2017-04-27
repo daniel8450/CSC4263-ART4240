@@ -23,6 +23,15 @@ public class Enemy : MonoBehaviour {
             Destroy(this.obj);
         }
 
+        if(cat == null)
+        {
+            cat = FindObjectOfType<Cat>();
+        }
+
+        if (obj == null)
+        {
+            obj = this.gameObject;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
