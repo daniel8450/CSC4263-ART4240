@@ -25,7 +25,7 @@ public class BabsDialog : MonoBehaviour
 
     void Start()
     {
-
+        drillPrefab.SetActive(false);
     }
 
 
@@ -62,7 +62,8 @@ public class BabsDialog : MonoBehaviour
         {
             if (!isCreated)
             {
-                Instantiate(drillPrefab, drillSpot, Quaternion.identity);
+                //Instantiate(drillPrefab, drillSpot, Quaternion.identity);
+                drillPrefab.SetActive(true);
                 isCreated = true;
             }
 
