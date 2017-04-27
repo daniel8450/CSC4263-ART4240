@@ -10,9 +10,8 @@ public class Cat : MonoBehaviour
     public float check;
     public bool hasToy;
     public CatHolder masterSystem;
-    
 
-   void Start()
+    void Start()
     {
         masterSystem = FindObjectOfType<CatHolder>();
         pogo = masterSystem.pogo;

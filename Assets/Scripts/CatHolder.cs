@@ -10,19 +10,27 @@ public class CatHolder : MonoBehaviour
     public int pogo;
     public float check;
     public bool hasToy;
+    private static CatHolder _instance;
 
-
-    void Start()
+    private void Awake()
     {
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
 
-        pogo = 0;
-        life = 9;
-        speed = 9.0f;
-        check = 0f;
-        hasToy = false;
+            pogo = 0;
+            life = 9;
+            speed = 9.0f;
+            check = 0f;
+            hasToy = false;
+
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
-
-
 
     void Update()
     {
@@ -51,10 +59,5 @@ public class CatHolder : MonoBehaviour
     public void gainToy()
     {
         hasToy = true;
-    }
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
     }
 }
