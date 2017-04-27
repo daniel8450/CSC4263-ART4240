@@ -19,45 +19,37 @@ public class powerUp : MonoBehaviour
 
             if (obj.name == "milk")
             {
-                cat.life += 3;
-                if(cat.life > 9)
-                {
-                    cat.life = 9;
-                }
+                cat.gainLife(3);
             }
 
             if (obj.name == "food")
             {
-                cat.life += 6;
-                if (cat.life > 9)
-                {
-                    cat.life = 9;
-                }
+                cat.gainLife(6);
             }
 
             if (obj.name == "sandPogo")
             {
-                cat.pogo = 1;
+                cat.gainPogo(1);
             }
 
             if (obj.name == "waterPogo")
             {
-                cat.pogo = 2;
+                cat.gainPogo(2);
             }
 
             if(obj.name == "drillPogo")
             {
-                cat.pogo = 3;
+                cat.gainPogo(3);
             }
 
             if (obj.name == "masterPogo")
             {
-                cat.pogo = 4;
+                cat.gainPogo(4);
             }
 
             if (obj.name == "catToy")
             {
-                cat.hasToy = true;
+                cat.gainToy();
             }
 
             Destroy(obj);

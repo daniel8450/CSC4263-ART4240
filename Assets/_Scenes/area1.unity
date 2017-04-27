@@ -1548,7 +1548,7 @@ Prefab:
         type: 2}
       propertyPath: playerCat
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1663958428}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35b349c78d29a6c438b34361381fd80f, type: 2}
   m_IsPrefabParent: 0

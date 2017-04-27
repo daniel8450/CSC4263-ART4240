@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     public float health; 
-    public float damage; 
+    public int damage; 
     public Cat cat;
     public GameObject obj;
 
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour {
     {
         if (col.CompareTag("Cat"))
         {
-            cat.life -= damage;
+            cat.loseLife(damage);
         }
 
 

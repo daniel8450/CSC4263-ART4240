@@ -333,10 +333,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfcae3f96fa0794486ea7eba1cb956c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: -6
+  life: 0
   speed: 1.2912718e-12
-  pogo: 3
+  pogo: 0
   check: 0
+  hasToy: 0
+  masterSystem: {fileID: 114222435329744116, guid: dc5faeb608acdcf438ca043b114f3d31,
+    type: 2}
 --- !u!114 &114205128237800418
 MonoBehaviour:
   m_ObjectHideFlags: 1

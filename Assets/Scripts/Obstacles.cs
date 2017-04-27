@@ -21,7 +21,7 @@ public class Obstacles : MonoBehaviour
             switch (obj.tag)
             {
                 case "spikes":
-                    cat.life -= 1.0f;
+                    cat.loseLife(1);
                     break;
                 case "pit":
                     cat.speed = cat.speed / 2.5f;

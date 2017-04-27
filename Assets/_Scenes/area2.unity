@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 519224875}
+  cat: {fileID: 0}
 --- !u!61 &519224877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1126,6 +1127,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114012475350720014, guid: de1bfc0aab34a5e4c9e22fac6038ea7d,
+        type: 2}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 74136907}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de1bfc0aab34a5e4c9e22fac6038ea7d, type: 2}
   m_IsPrefabParent: 0
@@ -1580,6 +1586,16 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 041807efa7531ec4fac36f10c865fa9b, type: 3}
+    - target: {fileID: 114650916609157540, guid: 3cd25676df21eb946b1ae59bb8e27473,
+        type: 2}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 1564256282}
+    - target: {fileID: 114785662310186938, guid: 3cd25676df21eb946b1ae59bb8e27473,
+        type: 2}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 1564256282}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cd25676df21eb946b1ae59bb8e27473, type: 2}
   m_IsPrefabParent: 0
@@ -1792,6 +1808,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0347a0f6480220c4093b8fbc487fc345, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1564256282 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1241694504727518, guid: 3cd25676df21eb946b1ae59bb8e27473,
+    type: 2}
+  m_PrefabInternal: {fileID: 1404515528}
 --- !u!1001 &1586366554
 Prefab:
   m_ObjectHideFlags: 0
@@ -2289,21 +2310,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114785662310186938, guid: 3cd25676df21eb946b1ae59bb8e27473,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 74136910}
     - target: {fileID: 114650916609157540, guid: 3cd25676df21eb946b1ae59bb8e27473,
         type: 2}
       propertyPath: cat
       value: 
       objectReference: {fileID: 74136907}
-    - target: {fileID: 82672453082131032, guid: 3cd25676df21eb946b1ae59bb8e27473,
+    - target: {fileID: 114785662310186938, guid: 3cd25676df21eb946b1ae59bb8e27473,
         type: 2}
-      propertyPath: m_audioClip
+      propertyPath: target
       value: 
-      objectReference: {fileID: 8300000, guid: 59a16e9305d411342ad16daab027cee1, type: 3}
+      objectReference: {fileID: 74136910}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cd25676df21eb946b1ae59bb8e27473, type: 2}
   m_IsPrefabParent: 0
