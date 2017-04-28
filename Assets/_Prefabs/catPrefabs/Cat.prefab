@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 61641179964307796}
   - component: {fileID: 70642784278927856}
   - component: {fileID: 58811327964450236}
+  - component: {fileID: 82029300466164008}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Cat
@@ -281,6 +282,86 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648985398007082}
   m_Enabled: 1
+--- !u!82 &82029300466164008
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1454052572835836}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.375
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!92 &92536331454503126
 Behaviour:
   m_ObjectHideFlags: 1
@@ -340,6 +421,16 @@ MonoBehaviour:
   hasToy: 0
   masterSystem: {fileID: 114222435329744116, guid: dc5faeb608acdcf438ca043b114f3d31,
     type: 2}
+  invincTime: 0
+  clips:
+  - {fileID: 8300000, guid: 1023e7e95020d864d82a879fa8eb4579, type: 3}
+  - {fileID: 8300000, guid: 36c2a71bb59325743afbb51d96b0bcc5, type: 3}
+  - {fileID: 8300000, guid: d63310eb5f588ef47b09e2e1b060f388, type: 3}
+  - {fileID: 8300000, guid: 057a09db997d91c42a2bfe1628c9158b, type: 3}
+  - {fileID: 8300000, guid: b14663ba3efc06f42b6bfd65bd8111a0, type: 3}
+  - {fileID: 8300000, guid: 341c58728a98bc2418a3f6579dc42300, type: 3}
+  - {fileID: 8300000, guid: f58744355e4fd564fa5126c0e6f5dd6e, type: 3}
+  catAudio: {fileID: 82029300466164008}
 --- !u!114 &114205128237800418
 MonoBehaviour:
   m_ObjectHideFlags: 1

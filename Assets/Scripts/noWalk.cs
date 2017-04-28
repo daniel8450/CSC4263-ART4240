@@ -21,15 +21,11 @@ public class noWalk : MonoBehaviour
         {
             moveCol.isTrigger = true;
         }
-        else if (cat.pogo == 2 && (moveCol.tag == "water" || moveCol.tag == "sand"))
+        else if (cat.pogo >= 2 && (moveCol.tag == "water" || moveCol.tag == "sand"))
         {
             moveCol.isTrigger = true;
         }
-        else if (cat.pogo == 3 && (moveCol.tag == "water" || moveCol.tag == "sand"))
-        {
-            moveCol.isTrigger = true;
-        }
-        else if (cat.pogo == 4 && (moveCol.tag == "water" || moveCol.tag == "sand"))
+        else if(cat.pogo >= 2 && (moveCol.tag == "water" || moveCol.tag == "sand"))
         {
             moveCol.isTrigger = true;
         }

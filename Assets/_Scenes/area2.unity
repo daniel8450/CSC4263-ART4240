@@ -1752,7 +1752,7 @@ Prefab:
         type: 2}
       propertyPath: cat
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 74136907}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7c71c6573f5caf47a9994b61fb9b1cf, type: 2}
   m_IsPrefabParent: 0
@@ -2189,7 +2189,7 @@ Prefab:
         type: 2}
       propertyPath: cat
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 74136907}
     - target: {fileID: 4338860938178358, guid: ecc210c6c9b1b4c48849461fdd70d58e, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
@@ -2366,7 +2366,7 @@ Prefab:
         type: 2}
       propertyPath: cat
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 74136907}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7c71c6573f5caf47a9994b61fb9b1cf, type: 2}
   m_IsPrefabParent: 0
