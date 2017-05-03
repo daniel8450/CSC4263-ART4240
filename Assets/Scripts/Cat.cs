@@ -29,10 +29,10 @@ public class Cat : MonoBehaviour
 	void Update ()
 	{
 		transform.eulerAngles = new Vector3(0, 0, 0);
-		if(life == 0)
+		if(life <= 0)
 		{
-			//Debug.Log("Game Over");
-			//die
+            masterSystem.gainLife(9);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("credits");
 		}
 		if(invincTime > 0)
 		{
@@ -57,7 +57,7 @@ public class Cat : MonoBehaviour
 		{
 			life -= amt;
 			masterSystem.loseLife(amt);
-			invincTime = 100;
+			invincTime = 160;
             catAudio.clip = clips[Random.Range(0, 7)];
             catAudio.Play();
 		}

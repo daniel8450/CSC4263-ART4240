@@ -52,7 +52,7 @@ public class BabsDialog : MonoBehaviour
             showBox = false;
         }
 
-        if ((showBox == true) && (Input.GetKeyDown(KeyCode.A)))
+        if ((showBox == true) && (Input.GetKey(KeyCode.A)))
         {
 
             box++;

@@ -48,7 +48,7 @@ public class sceneChange : MonoBehaviour
                     SceneManager.LoadScene("area10");
                     break;
                 case "trigger11":
-                    SceneManager.LoadScene("area11");
+                    SceneManager.LoadScene("credits");
                     break;
                 default:
                     break;
