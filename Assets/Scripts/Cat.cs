@@ -17,6 +17,12 @@ public class Cat : MonoBehaviour
 	void Start()
 	{
 		masterSystem = FindObjectOfType<CatHolder>();
+        if(masterSystem == null)
+        {
+            GameObject tmp = new GameObject();
+            tmp.AddComponent<CatHolder>();
+            masterSystem = tmp.GetComponent<CatHolder>();
+        }
 		pogo = masterSystem.pogo;
 		life = masterSystem.life;
 		speed = masterSystem.speed;
